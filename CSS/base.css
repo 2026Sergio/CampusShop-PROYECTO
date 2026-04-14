@@ -1,0 +1,24 @@
+:root {
+    --bat-black: #101033;
+    --bat-gray: #060627;
+    --bat-gold: #c5a059; 
+    --bat-text: #e0e0e0;
+    --bat-border: #222225;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bat-black);
+    color: var(--bat-text);
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+#btn-menu {
+    display: none;
+}

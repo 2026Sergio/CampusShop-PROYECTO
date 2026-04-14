@@ -1,0 +1,46 @@
+/* Buscador */
+#busqueda input {
+    width: 90%;
+    margin: 20px auto;
+    display: block;
+    background: var(--bat-gray);
+    border: 1px solid var(--bat-border);
+    padding: 12px;
+    color: white;
+    border-radius: 4px;
+}
+
+/* Grid que se ajusta automáticamente */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: var(--bat-gray);
+    border: 1px solid var(--bat-border);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-info {
+    padding: 15px;
+}
+
+.card-info a {
+    display: block;
+    margin-top: 10px;
+    border: 1px solid var(--bat-gold);
+    color: var(--bat-gold);
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}

@@ -1,0 +1,69 @@
+/* Sidebar posicionada fuera de la pantalla */
+.sidebar {
+    width: 280px;
+    height: 100vh;
+    background: var(--bat-gray);
+    position: fixed;
+    top: 0;
+    left: -280px; 
+    z-index: 1000;
+    border-right: 1px solid var(--bat-border);
+}
+
+/* Efecto Hamburguesa: Aparece al instante sin transición */
+#btn-menu:checked ~ .sidebar {
+    left: 0;
+}
+
+header {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--bat-border);
+}
+
+.hamburguesa {
+    font-size: 28px;
+    cursor: pointer;
+    color: var(--bat-gold);
+}
+
+.sidebar-header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--bat-border);
+}
+
+.sidebar nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: var(--bat-text);
+    text-decoration: none;
+}
+
+.sidebar nav ul li a:hover {
+    background: #252528;
+}
+.sidebar-header {
+    display: flex;
+    flex-direction: column; /* Pone el logo arriba y el texto abajo */
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid var(--bat-border);
+}
+
+.logo-sidebar {
+    width: 80px;  /* Ajusta el tamaño para que se vea elegante */
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 4px; /* Opcional, por si el logo es cuadrado */
+    /* Estilo Wayne: Si el logo es muy brillante, puedes bajarle la intensidad */
+    filter: grayscale(100%) brightness(0.8); 
+}
+
+.logo-sidebar:hover {
+    filter: grayscale(0%) brightness(1); /* Se ilumina al pasar el mouse */
+}
