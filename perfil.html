@@ -4,12 +4,56 @@
     <meta charset="UTF-8">
     <title>Mi Perfil</title>
     <link rel="stylesheet" href="CSS/base.css">
+    <link rel="stylesheet" href="CSS/components.css">
+
 </head>
 <body>
     <header>
-        <a href="index.html">Home</a>
+        <nav class="footer-nav-bar">
+            <a href="index.html"><span>Inicio</span></a>
+            <a href="catalogo.html"><span>Catálogo</span></a>
+            <a href="carrito.html"><span>Carrito</span></a>
+            <a href="perfil.html" class="active"><span>Perfil</span></a>
+        </nav>
     </header>
-    <h1>Perfil de Sergio</h1>
     <a href="historial.html">Ver Historial de Pedidos</a>
+    <main class="perfil-container">
+    <section class="perfil-info">
+        <div class="avatar-wrapper">
+            <img src="IMG/ICONOS/perfil.jpg" alt="Foto de Perfil" class="avatar-img">
+        </div>
+        <h1 class="user-name">Sergio Ajú</h1>
+        <p class="user-email">armadoramos@gmail.com</p>
+    </section>
+
+    <section class="perfil-menu-grid">
+        <a href="historial.html" class="menu-item">
+            <span class="menu-icon"></span>
+            <span class="menu-text">Mis Pedidos</span>
+        </a>
+        
+        <a href="direcciones.html" class="menu-item">
+            <span class="menu-icon"></span>
+            <span class="menu-text">Direcciones</span>
+        </a>
+
+        <a href="configuracion.html" class="menu-item">
+            <span class="menu-icon"></span>
+            <span class="menu-text">Configuración</span>
+        </a>
+
+        <a href="logout.html" class="menu-item logout">
+            <span class="menu-icon"></span>
+            <span class="menu-text">Cerrar Sesión</span>
+        </a>
+    </section>
+</main>
+
+<nav class="footer-nav-bar">
+    <a href="index.html"><span>Inicio</span></a>
+    <a href="catalogo.html"><span>Catálogo</span></a>
+    <a href="carrito.html"><span>Carrito</span></a>
+    <a href="historial.html" class="active"><span>historial</span></a>
+</nav>
 </body>
 </html>

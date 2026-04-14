@@ -6,20 +6,46 @@
     <title>CampusShop | Catálogo</title>
     <link rel="stylesheet" href="CSS/base.css">
     <link rel="stylesheet" href="CSS/layout.css">
+    <link rel="stylesheet" href="CSS/components.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
 </head>
 <body>
-    <header>
-        <a href="index.html">☰ Volver al Home</a>
-        <h1>Nuestras Categorías</h1>
-    </header>
 
-    <main>
-        <ul>
-            <li><a href="productos de html/abrigos.html">Abrigos</a></li>
-            <li><a href="productos de html/camisas.html">Camisas</a></li>
-            <li><a href="productos de html/pantalon.html">Pantalones</a></li>
-            <li><a href="productos de html/zapatos.html">Zapatos</a></li>
-        </ul>
-    </main>
+    <div class="main-container">
+        <header class="catalog-header">
+            <div class="header-left">
+                <img src="IMG/LOGOS/icono2.png" alt="Logo" width="250px" height="150px">
+            </div>
+            <h1>Catálogo</h1>
+            <div class="header-right">
+                <a href="carrito.html" class="cart-icon">carrito</a>
+                <a href="index.html">Inicio</a> 
+                <a href="perfil.html">Perfil</a>
+            </div>
+        </header>
+        <main>
+            <section class="grid-container">
+                
+                <article class="card">
+                    <span class="badge oferta">oferta</span>
+                    <img src="IMG/ROPA/ABRIGOS/abrigo1.jpg" alt="Sudadera">
+                    <div class="card-info">
+                        <h3>Sudadera Clásica</h3>
+                        <div class="price-row">
+                            <p>Q.300.00</p>
+                            <button class="btn-add">🛒</button>
+                            <a href="productos de html/abrigos.html">Ver</a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 CampusShop - Sergio Ajú</p>
+            <nav class="footer-nav">
+            </nav>
+        </footer>
+    </div>
 </body>
 </html>

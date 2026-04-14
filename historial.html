@@ -2,12 +2,74 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Historial de Compras</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusShop | Historial</title>
     <link rel="stylesheet" href="CSS/base.css">
+    <link rel="stylesheet" href="CSS/layout.css">
+    <link rel="stylesheet" href="CSS/components.css">
 </head>
-<body>
-    <h1>Mis Compras Pasadas</h1>
-    <p>No tienes pedidos recientes.</p>
-    <a href="perfil.html">Volver al Perfil</a> | <a href="index.html">Inicio</a>
+<body class="perfil-body">
+
+    <main class="perfil-container">
+        <header class="perfil-header" style="display: flex; align-items: center; gap: 15px;">
+            <a href="perfil.html" style="text-decoration: none; color: var(--bat-gold); font-size: 1.5rem;">←</a>
+            <h2>Historial de Pedidos</h2>
+        </header>
+
+        <section class="pedidos-list">
+            
+            <article class="pedido-card">
+                <div class="pedido-info">
+                    <div class="pedido-row">
+                        <span class="orden-num">Orden #12345</span>
+                        <span class="pedido-precio">Q.125.50</span>
+                    </div>
+                    <p class="pedido-fecha">15 Oct, 2025</p>
+                    <div class="pedido-footer">
+                        <span class="status entregado">● Entregado</span>
+                        <a href="#" class="btn-detalle">Ver detalle ></a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="pedido-card">
+                <div class="pedido-info">
+                    <div class="pedido-row">
+                        <span class="orden-num">Orden #12344</span>
+                        <span class="pedido-precio">Q.89.99</span>
+                    </div>
+                    <p class="pedido-fecha">12 Oct, 2025</p>
+                    <div class="pedido-footer">
+                        <span class="status camino">● En camino</span>
+                        <a href="#" class="btn-detalle">Ver detalle ></a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="pedido-card">
+                <div class="pedido-info">
+                    <div class="pedido-row">
+                        <span class="orden-num">Orden #12343</span>
+                        <span class="pedido-precio">Q.210.00</span>
+                    </div>
+                    <p class="pedido-fecha">05 Oct, 2025</p>
+                    <div class="pedido-footer">
+                        <span class="status cancelado">● Cancelado</span>
+                        <a href="#" class="btn-detalle">Ver detalle ></a>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <nav class="footer-nav-bar">
+        <a href="index.html"><span>Inicio</span></a>
+        <a href="catalogo.html"><span>Catálogo</span></a>
+        <a href="carrito.html"><span>Carrito</span></a>
+        <a href="pedidos.html"><span>Pedidos</span></a>
+        <a href="perfil.html"><span>Perfil</span></a>
+    </nav>
+
 </body>
 </html>
