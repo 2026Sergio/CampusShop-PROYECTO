@@ -2,7 +2,6 @@
     body {
         flex-direction: column; 
     }
-
     aside {
         width: 100%;
         height: auto;
@@ -11,13 +10,12 @@
     article {
         width: 100%;
     }
-
     #productos-destacados {
         justify-content: center;
     }
 }
 @media (max-width: 1024px) and (min-width: 769px) {
     article {
-        width: calc(50% - 20px); /* Dos por fila en tablets */
+        width: calc(50% - 20px);
     }
 }

@@ -42,7 +42,7 @@
     color: white;
     z-index: 10;
 }
-.badge.oferta { background-color: #e57373; }
+.badge.oferta { background-color: #dd6161; }
 .badge.stock { background-color: #64b5f6; }
 
 .card-info {
@@ -241,3 +241,9 @@
 .footer-nav-bar a.active { color: var(--bat-gold); }
 
 .footer-nav-bar span { margin-top: 4px; }
+.header-right{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 0px;
+    padding: 5px;
+}
