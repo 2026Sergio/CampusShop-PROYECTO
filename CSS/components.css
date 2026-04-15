@@ -435,27 +435,38 @@
     font-weight: bold;
     border: none;
 }
+.icon-circle {
+    border: none;
+    background: transparent;
+    margin-bottom: 30px;
+}
+
+.img-vacio {
+    width: 180px;
+    height: auto;
+    filter: brightness(0) invert(1); 
+    opacity: 0.8;
+}
 .btn-primary-full {
     display: block;
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
-    background-color: #1a4a31; 
-    color: rgb(7, 8, 99);
+    background-color: var(--bat-gold);
+    color: var(--bat-black);          
     text-align: center;
     padding: 20px;
     border-radius: 12px;
     text-decoration: none;
     font-weight: bold;
     border: none;
-    background-color: var(--bat-black, #101033);
-    background-color: var(--bat-gray, #060627);
-    background-color: var(--bat-gold, #50380c); 
-    background-color: var(--bat-text, #0c1cad);
-    background-color: var(--bat-border, #07074b);
 }
 
-.icon-circle {
-    border: none;
-    background: transparent;
+.text-group h3 {
+    color: var(--bat-text); /* Texto claro */
+    font-size: 1.8rem;
+}
+
+.text-group p {
+    color: #3737d4; /* Azul grisáceo suave */
 }

@@ -132,15 +132,25 @@ header {
     padding: 20px;
     border-top: 1px solid #f0f0f0;
 }
-.empty-header {
+.empty-cart-container {
+    height: 100vh;
     display: flex;
-    align-items: center;
-    padding: 20px 40px;
-    gap: 15px;
-    border-bottom: none; 
+    flex-direction: column;
+    /* Usamos tu variable de azul profundo */
+    background-color: var(--bat-gray); 
+    width: 100%;
 }
 
-.empty-footer {
-    padding: 30px 40px;
-    border-top: none;   
+.empty-header, .empty-footer {
+    padding: 20px 40px;
+    border: none; /* Sin bordes como pediste */
+}
+
+.empty-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
