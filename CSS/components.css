@@ -247,3 +247,100 @@
     gap: 0px;
     padding: 5px;
 }
+/* Contenedor Principal estilo Móvil */
+.product-detail-container {
+    max-width: 450px;
+    margin: 0 auto;
+    background: #0d053d;
+    font-family: Arial, sans-serif;
+}
+
+.product-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.main-img {
+    width: 100%;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+}
+
+.product-info-block {
+    padding: 20px;
+}
+
+.product-info-block h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.description {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* Selector de Tallas */
+.size-options {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.size-btn {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.size-btn.active {
+    background: #2d4a4a; /* Color oscuro de tu botón */
+    color: white;
+}
+
+/* Botón Añadir */
+.btn-primary {
+    width: 100%;
+    padding: 15px;
+    background: #2d4a4a;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Grid de Relacionados */
+.related-products {
+    padding: 20px;
+}
+
+.related-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.related-item img {
+    width: 100%;
+    background: #f5f5f5;
+    border-radius: 15px;
+}
+
+.related-item h4 {
+    font-size: 13px;
+    margin: 5px 0 2px 0;
+}
