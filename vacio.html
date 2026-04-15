@@ -2,11 +2,34 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Carrito Vacío</title>
-    <link rel="stylesheet" href="CSS/base.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusShop | Carrito Vacío Responsivo</title>
+    <link rel="stylesheet" href="../CSS/base.css">
+    <link rel="stylesheet" href="../CSS/layout.css">
+    <link rel="stylesheet" href="../CSS/components.css">
+    <link rel="stylesheet" href="../CSS/responsive.css">
 </head>
 <body>
-    <h1>El carrito está vacío</h1>
-    <a href="catalogo.html">Ir a buscar productos</a>
+    <main class="empty-cart-container">
+        <header class="empty-header">
+            <a href="index.html" class="back-btn">←</a>
+            <h2>Tu Carrito</h2>
+        </header>
+
+        <section class="empty-content">
+            <div class="icon-circle">
+                <img src="IMG/ICONOS/carrito.png" alt="Carrito vacío" class="img-vacio">
+            </div>
+            
+            <div class="text-group">
+                <h3>Tu carrito está vacío </h3>
+                <p>Parece que aún no has añadido nada. ¡Explora nuestros productos!</p>
+            </div>
+        </section>
+
+        <footer class="empty-footer">
+            <a href="index.html" class="btn-primary-full">Explorar Catálogo</a>
+        </footer>
+    </main>
 </body>
 </html>

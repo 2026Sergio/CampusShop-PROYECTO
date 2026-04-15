@@ -67,3 +67,80 @@ header {
 .logo-sidebar:hover {
     filter: grayscale(0%) brightness(1); 
 }
+.main-product-card {
+    display: flex;
+    flex-direction: column; /* Por defecto para teléfono (uno abajo del otro) */
+    gap: 20px;
+    background: var(--product-bg);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.main-image-container, .main-content {
+    width: 100%; /* Ocupan todo el ancho en el móvil */
+}
+.cart-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* En móvil: uno arriba del otro */
+.cart-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cart-summary {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+.empty-cart-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff; /* Fondo blanco como tu imagen */
+}
+
+.empty-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+}
+
+.empty-content {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.empty-footer {
+    padding: 20px;
+    border-top: 1px solid #f0f0f0;
+}
+.empty-header {
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    gap: 15px;
+    border-bottom: none; 
+}
+
+.empty-footer {
+    padding: 30px 40px;
+    border-top: none;   
+}

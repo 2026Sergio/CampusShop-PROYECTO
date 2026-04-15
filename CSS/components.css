@@ -336,11 +336,126 @@
 
 .related-item img {
     width: 100%;
-    background: #f5f5f5;
+    background: #60649e;
     border-radius: 15px;
 }
 
 .related-item h4 {
     font-size: 13px;
     margin: 5px 0 2px 0;
+}
+.main-content a {
+    display: block;
+    width: 100%;
+}
+
+.btn-add-to-cart {
+    width: 100%; 
+}
+.cart-item {
+    background: #1f095e;
+    display: flex;
+    padding: 15px;
+    border-radius: 15px;
+    gap: 15px;
+    position: relative;
+}
+
+.cart-item img {
+    width: 80px;
+    height: 80px;
+    background: #0d0849;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.item-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-checkout {
+    width: 100%;
+    padding: 15px;
+    background: #1a4a31; 
+    color: rgb(31, 7, 71);
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.icon-circle {
+    width: 220px;
+    height: 220px;
+    background-color: #e8edea; 
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.img-vacio {
+    width: 120px;
+    height: auto;
+    opacity: 0.5; 
+    filter: grayscale(100%);
+}
+
+.text-group h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.text-group p {
+    color: #777;
+    max-width: 280px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+.btn-primary-full {
+    display: block;
+    width: 100%;
+    background-color: #08042b; 
+    color: rgb(21, 7, 58);
+    text-align: center;
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+}
+.btn-primary-full {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #1a4a31; 
+    color: rgb(7, 8, 99);
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    background-color: var(--bat-black, #101033);
+    background-color: var(--bat-gray, #060627);
+    background-color: var(--bat-gold, #50380c); 
+    background-color: var(--bat-text, #0c1cad);
+    background-color: var(--bat-border, #07074b);
+}
+
+.icon-circle {
+    border: none;
+    background: transparent;
 }

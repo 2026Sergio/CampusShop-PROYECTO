@@ -19,3 +19,47 @@
         width: calc(50% - 20px);
     }
 }
+@media (min-width: 768px) {
+    .main-product-card {
+        flex-direction: row; /* Pone la imagen a la izquierda y el texto a la derecha */
+        align-items: flex-start;
+        padding: 40px;
+    }
+
+    .main-image-container {
+        flex: 1; /* Toma el 50% del espacio */
+    }
+
+    .main-content {
+        flex: 1; /* Toma el otro 50% */
+        padding-left: 30px;
+    }
+
+    .related-grid {
+        grid-template-columns: repeat(3, 1fr); /* Mantiene los 3 productos abajo */
+    }
+}
+@media screen and (min-width: 992px) {
+    .cart-wrapper {
+        flex-direction: row; /* Cambio a horizontal */
+        align-items: flex-start;
+    }
+
+    .cart-items {
+        flex: 2; /* El carrito ocupa más espacio */
+    }
+
+    .cart-summary {
+        flex: 1; /* El resumen ocupa menos espacio */
+        position: sticky; /* Se queda fijo al hacer scroll */
+        top: 20px;
+    }
+}
+@media (min-width: 768px) {
+    .empty-cart-container {
+        border: none;       /* ELIMINADO: Quita el borde de la tarjeta en PC */
+        box-shadow: none;   /* ELIMINADO: Quita la sombra para que sea plano */
+        max-width: 100%;    /* Ahora se estira a toda la pantalla */
+        margin: 0;          /* Sin márgenes */
+    }
+}

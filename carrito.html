@@ -5,6 +5,9 @@
     <title>Carrito de Compras</title>
     <link rel="stylesheet" href="CSS/base.css">
     <link rel="stylesheet" href="CSS/layout.css">
+    <link rel="stylesheet" href="CSS/components.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+
 </head>
 <body>
     <h1>Tu Carrito</h1>
@@ -12,4 +15,51 @@
     <a href="vacio.html">Vaciar Carrito (Prueba)</a><br><br>
     <a href="index.html">Regresar al Inicio</a>
 </body>
+    <main class="cart-container">
+    <header class="cart-header">
+        <a href="index.html">←</a>
+        <h2>Mi Carrito (3)</h2>
+    </header>
+
+    <div class="cart-wrapper">
+        <section class="cart-items">
+            <article class="cart-item">
+                <img src="IMG/LOGOS/icono1.png" alt="ICONO">
+                <div class="item-details">
+                    <div class="item-info">
+                        <h3>Taza de Cerámica Campus</h3>
+                        <p class="ref">Ref: #SKU12345</p>
+                    </div>
+                    <div class="item-controls">
+                        <div class="qty">
+                            <button>-</button><span>1</span><button>+</button>
+                        </div>
+                        <div class="price-box">
+                            <p>q.200.50</p>
+                            <span>subtotal</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-delete">🗑️</button>
+            </article>
+            </section>
+
+        <aside class="cart-summary">
+            <div class="summary-row">
+                <span>Subtotal</span>
+                <span>$96.49</span>
+            </div>
+            <div class="summary-row">
+                <span>Impuestos</span>
+                <span>$18.33</span>
+            </div>
+            <hr>
+            <div class="summary-row total">
+                <strong>Total</strong>
+                <strong>$114.82</strong>
+            </div>
+            <button class="btn-checkout">Proceder al Pago</button>
+        </aside>
+    </div>
+</main>
 </html>
